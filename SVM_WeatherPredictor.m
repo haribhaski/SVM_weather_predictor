@@ -65,8 +65,8 @@ if(input_choice==1)
     user_input_scaled = (user_input - mean(X_numeric, 1)) ./ std(X_numeric, 0, 1);
 
 elseif (input_choice==2)
-        % API URL construction for current weather
-        api_key = '3923d05fdf224c818da102707241405'; % Replace 'YOUR_API_KEY' with your actual API key
+        % API URL construction for current weather 
+        api_key = 'REPLACE IT WITH YOU API KEY'; % Replace 'YOUR_API_KEY' with your actual API key i used the WEBSITE "weatherapi.com" as its free wrt limited uses
         city = 'Mumbai'; % Specify the city for which you want to fetch weather
         weather_url = sprintf('http://api.weatherapi.com/v1/current.json?key=%s&q=%s', api_key, city);
         
